@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skyrim Battle</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="jumbotron">
+            
+            <h1 class="text-center">Welcome to Skyrim Battle</h1>
+            <h2 class="text-center" id="choose-your">Choose Your Fighter</h2></span>
+            
+        </div>
+
+        <div align="center" class="row">
+    
+            <div class="col-lg-12" id="message-section">
+                <div id="game-message"></div>
+            </div>
+    
+        </div>
+        
+        <div align="center" class="row" id="battleground">
+
+            <div class="col-lg-12" id="characters-available">
+                <span class="character-image available-character" id="dragonborn-character">
+                    <p>Dragonborn</p>
+                    <img src="./assets/images/dragonborn.jpg" alt="Dragonborn" id="dragonBornImage" style="width: 150px">
+                    <p class="health">120</p>
+                </span>
+
+                <span class="character-image available-character" id="troll-character">
+                    <p>Troll</p>
+                    <img src="./assets/images/troll.jpg" alt="Troll" id="trollImage" style="width: 150px">
+                    <p class="health">150</p>
+                </span>
+
+                <span class="character-image available-character" id="falmer-character">
+                    <p>Falmer</p>
+                    <img src="./assets/images/falmer.jpg" alt="Falmer" id="falmerImage" style="width: 150px">
+                    <p class="health">100</p>
+                </span>
+
+                <span class="character-image available-character" id="dragon-character">
+                    <p>Dragon</p>
+                    <img src="./assets/images/dragon.jpg" alt="Dragon" id="dragonImage" style="width: 150px">
+                    <p class="health">180</p>
+                </span>
+            </div>
+
+        </div>
+        
+        <div class="row" id="battleground">
+
+            <div align="center"class="col-lg-5" id="chosen-character">
+                <h2>Your Character</h2>
+            </div>
+            
+            <div align="center" class="col-lg-2" id="arena">
+                <h2>Arena</h2>
+                <button id="attack">Attack</button>
+                <button id="restart">Restart</button>
+            </div>
+            
+            <div align="center" class="col-lg-5" id="opponent-section">
+                <h2>Opponent</h2>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+                
+            <div align="center" class="col-lg-12" id="enemies-available">
+               <h2>Enemies Available to Attack</h2>
+            </div>
+
+        </div>
+
+        <audio id="characterselect">
+            <source src="characterselect.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="enemyselect">
+            <source src="enemyselect.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="gameover">
+            <source src="gameover.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="attack">
+            <source src="attack.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="counterattack">
+            <source src="counterattack.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="gamewin">
+            <source src="gamewin.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="theme" autoplay>
+            <source src="skyrimtheme.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>

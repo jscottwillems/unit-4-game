@@ -1,6 +1,6 @@
 # unit-4-game
 
-RPG game based on the popular Elder Scolls V Skyrim.
+RPG game based on the popular Elder Scrolls V Skyrim.
 
 Choose a character and and opponent and duke it out to see who reigns supreme.
 
